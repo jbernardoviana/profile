@@ -1,0 +1,141 @@
+/* .social
+/* .img-me
+/* .description  */
+
+
+/* Body
+
+Pick a nice background-color,
+font-family / color / font-size
+and line-height for the <body>.
+Setting these font rules at the
+body-level will apply them on all
+basic texts (<p>, <li>, etc...).  */
+
+body {
+  font-family: 'open-sans', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  background-color: #EBEBEB;
+  line-height: 1.3em;
+  color: lightgrey;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.card {
+  text-align: center;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 25px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px;
+}
+
+/* Headers
+
+Choose a nice color and font-family
+for headers (<h1>, <h2>, <h3>)
+Choose harmonious font-size and
+line-height for headers
+Hint: small headers are much more subtle.
+Check any website (Medium, Airbnb, etc.),
+you'll see that the font-size of their headers
+is quite small. */
+
+h1 {
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #DD5555;
+}
+
+h2 {
+  font-family: 'open-sans', sans-serif;
+  color: grey;
+  line-height: 1.4em;
+  font-size: 15px;
+}
+
+/*----------------My Image-----------------------*/
+.img-me {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  box-shadow: 10px 7px 21px 2px rgba(0,0,0,0.62);
+  transition: all 0.1s linear;
+}
+
+.img-me:hover {
+  border-radius: 50%;
+  border: 1px solid;
+  box-shadow: 0 0 1px;
+}
+.description {
+  font-weight: normal;
+}
+
+/*----------------Link-----------------------*/
+.description a {
+  text-decoration: none;
+  color: black;
+}
+
+.description a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*----------------Social List-----------------------*/
+ol {
+  /* ol element has default padding left */
+  padding: 0px;
+}
+
+ol li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px;
+}
+
+.social a {
+  color: black;
+}
+
+.social img {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  box-shadow: 1px 3px 3px 2px rgba(0,0,0,0.62);
+  transition: all 0.3s linear;
+}
+.social a:hover img {
+  border: 0.5px solid #DD5555;
+  border-radius: 50%;
+  box-shadow: 0 0 1px;
+  background-color: lightgrey;
+}
+
+/*----------------My projects-----------------------*/
+
+.info td {
+  text-align: center;
+}
+
+.info img {
+  height: 250;
+  width: 200;
+}
+
+
+
+
+
+
