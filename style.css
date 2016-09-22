@@ -70,13 +70,13 @@ h2 {
   height: 120px;
   border-radius: 50%;
   border: 2px solid #ccc;
-  box-shadow: 4px 3px 4px 1px rgba(0,0,0,0.62);
-  transition: all 0.1s linear;
+  box-shadow: 2px 3px 2px 1px rgba(0,0,0,0.38);
+  transition: all 0.4s linear;
 }
 
 .img-me:hover {
   border-radius: 50%;
-  border: 1px solid #DD5555;
+  border: 2px solid #DD5555;
   box-shadow: 0 0 1px;
 }
 .description {
@@ -116,12 +116,12 @@ ol li {
   height: 2em;
   border-radius: 50%;
   box-shadow: 0.5px 1px 1px 1px rgba(0,0,0,0.62);
-  transition: all 0.1s linear;
+  transition: all 0.2s linear;
 }
 .social a:hover img {
-  border: 0.5px solid #DD5555;
+  border: 4px solid #DD5555;
   border-radius: 50%;
-  box-shadow: 0 0 1px;
+  box-shadow: 5px 1px 2px 1px rgba(0,0,0,0.62);
   background-color: lightgrey;
 }
 
@@ -131,12 +131,18 @@ ol li {
   background: url('images/social_icons_sprite.png') no-repeat -456px -54px;
   width: 32px;
   height: 33px;
+  border-radius: 50%;
+  border: 1px dotted #DD5555;
+  background-color: lightgrey;
+  box-shadow: 5px 1px 2px 1px rgba(0,0,0,0.62);
 }
 
 #sprite {
   background: url('images/social_icons_sprite.png') no-repeat -226px -55px;
   width: 33px;
   height: 32px;
+  border-radius: 50%;
+  transition: all 0.7s ease-in;
 }
 /*----------------My projects-----------------------*/
 
