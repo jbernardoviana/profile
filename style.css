@@ -13,12 +13,13 @@ body-level will apply them on all
 basic texts (<p>, <li>, etc...).  */
 
 body {
-  font-family: 'open-sans', sans-serif;
-  font-weight: normal;
-  font-size: 14px;
+  font-family: 'Open-sans', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
   background-color: #EBEBEB;
-  line-height: 1.3em;
-  color: lightgrey;
+  line-height: 1.6em;
+  color: #7d7d7d;
+
 }
 
 .container {
@@ -50,15 +51,15 @@ you'll see that the font-size of their headers
 is quite small. */
 
 h1 {
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 20px;
   color: #DD5555;
 }
 
 h2 {
-  font-family: 'open-sans', sans-serif;
-  color: grey;
+  font-family: 'Open-sans', sans-serif;
+  color: #7d7d7d;
   line-height: 1.4em;
   font-size: 15px;
 }
@@ -69,28 +70,29 @@ h2 {
   height: 120px;
   border-radius: 50%;
   border: 2px solid #ccc;
-  box-shadow: 10px 7px 21px 2px rgba(0,0,0,0.62);
+  box-shadow: 4px 3px 4px 1px rgba(0,0,0,0.62);
   transition: all 0.1s linear;
 }
 
 .img-me:hover {
   border-radius: 50%;
-  border: 1px solid;
+  border: 1px solid #DD5555;
   box-shadow: 0 0 1px;
 }
 .description {
-  font-weight: normal;
+  font-weight: 300;
 }
 
 /*----------------Link-----------------------*/
 .description a {
   text-decoration: none;
-  color: black;
+  color: #ccc;
+  font-weight: lighter;
 }
 
 .description a:hover {
-  text-decoration: underline;
-  font-weight: bold;
+  text-decoration: none;
+  color: #DD5555;
 }
 
 /*----------------Social List-----------------------*/
@@ -113,8 +115,8 @@ ol li {
   width: 2em;
   height: 2em;
   border-radius: 50%;
-  box-shadow: 1px 3px 3px 2px rgba(0,0,0,0.62);
-  transition: all 0.3s linear;
+  box-shadow: 0.5px 1px 1px 1px rgba(0,0,0,0.62);
+  transition: all 0.1s linear;
 }
 .social a:hover img {
   border: 0.5px solid #DD5555;
@@ -123,6 +125,19 @@ ol li {
   background-color: lightgrey;
 }
 
+/*----------------sprite test-----------------------*/
+/*----------------sprite tem de estar escondido por trás-----------------------*/
+#sprite:hover {
+  background: url('images/social_icons_sprite.png') no-repeat -456px -54px;
+  width: 32px;
+  height: 33px;
+}
+
+#sprite {
+  background: url('images/social_icons_sprite.png') no-repeat -226px -55px;
+  width: 33px;
+  height: 32px;
+}
 /*----------------My projects-----------------------*/
 
 .info td {
