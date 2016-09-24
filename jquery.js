@@ -14,12 +14,6 @@ $(document).ready(function() {
       return false;
     });
     $('.scrollTop a').scrollTop();
-
-
-    if( $("li").hasClass("active") ){
-      $(this).children().css("color","red");
-    };
-
   }
   scrollNav();
 
