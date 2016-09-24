@@ -17,6 +17,11 @@ $(document).ready(function() {
   }
   scrollNav();
 
-
+  window.sr = ScrollReveal();
+    sr.reveal('#summary', {mobile: true, reset: true, duration: 2000, origin: 'top' } );
+    sr.reveal('#middle', {mobile: true, reset: true, duration: 2000, origin: 'left', scale: 0.6 } );
+    sr.reveal('#hobbies', {mobile: true,  reset: true, duration: 2000, origin: 'right', scale: 0.6 } );
+    sr.reveal('#location', {mobile: true, reset: true, duration: 2000, origin: 'top' } );
+    sr.reveal('#footer', {mobile: true, reset: true, duration: 2000, origin: 'bottom' } );
 
 });
