@@ -22,9 +22,12 @@ body {
 
 }
 
-.container {
-  width: 500px;
-  margin: 0 auto;
+.container-fluid {
+
+
+  width: 90%;
+  margin: 30px auto;
+
 }
 
 .card {
@@ -53,7 +56,7 @@ is quite small. */
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 25px;
   color: #DD5555;
 }
 
@@ -61,8 +64,64 @@ h2 {
   font-family: 'Open-sans', sans-serif;
   color: #7d7d7d;
   line-height: 1.4em;
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 400;
 }
+
+h3 {
+  font-family: 'Open-sans', sans-serif;
+  color: #7d7d7d;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+/* ---------------------SideBar ----------------- */
+
+#sidebar {
+  position: fixed;
+  width: 100px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #384047;
+  text-align: center;
+  box-shadow: 0px 1px 2px 0px;
+}
+
+/* Responsive layout behavior */
+
+@media (max-width: 768px) {
+  #page-content{
+    margin-left: 0px !important ;
+  }
+  #sidebar {
+    display: none;
+  }
+}
+
+ #sidebar > ul {
+  padding-left: 0px; /* Default left padding in ul */
+  list-style: none;
+  }
+
+#sidebar li {
+  margin-top: 50px;
+  margin-bottom: 50px;
+ }
+
+li > a {
+  color:#788188;
+}
+
+li > a:hover {
+  color:green;
+}
+
+#page-content {
+  margin-left: 100px;
+}
+
 
 /*----------------My Image-----------------------*/
 .img-me {
@@ -98,18 +157,18 @@ h2 {
 /*----------------Social List-----------------------*/
 ol {
   /* ol element has default padding left */
-  padding: 0px;
+  padding-left: 0px;
 }
 
-ol li {
+ol > li {
   list-style: none;
   display: inline-block;
   margin: 10px;
 }
 
-.social a {
+/*.social a {
   color: black;
-}
+}*/
 
 .social img {
   width: 2em;
@@ -144,17 +203,44 @@ ol li {
   border-radius: 50%;
   transition: all 0.7s ease-in;
 }
-/*----------------My projects-----------------------*/
+/*----------------Current Location-----------------------*/
+
 
 .info td {
-  text-align: center;
+  padding: 10px;
+  text-align: justify;
+
+  line-height: 1.6em;
+  font-weight: 300;
+  font-size: 15px;
 }
 
 .info img {
-  height: 250;
-  width: 200;
+  height: 190px;
+  width: 190px;
+  border-radius: 50%;
 }
 
+hr {
+  border-color: #1d9d74;
+  background-color: #1d9d74;
+  height: 0.5px;
+  border:0;
+}
+/*----------------About-----------------------*/
+#footer p {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.3em;
+}
+
+#footer a {
+  text-decoration:none;
+}
+
+#footer a:hover {
+  color: #1d9d74;
+}
 
 
 

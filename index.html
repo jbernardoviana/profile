@@ -4,69 +4,81 @@
   <meta charset="UTF-8">
   <title>JB</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google fonts -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700">
-
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="card">
-      <div>
-        <img src="images/jb.jpg" class = "img-me" alt="my image">
+  <div id="sidebar">
+    <ul>
+      <li><a href="#summary"><i class="fa fa-info-circle fa-2x"></i></a></li>
+      <li> <a href="#middle"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i></a></li>
+      <li><a href="#location"> <i class="fa fa-compass fa-2x"></i> </a></li>
+      <li> <a href="#footer"><i class="fa fa-life-ring fa-2x"></i></a></li>
+    </ul>
+  </div>
+
+  <div id="page-content">
+    <div class="container-fluid">
+      <div class="card" id="summary">
+        <div>
+          <img src="images/jb.jpg" class = "img-me" alt="my image">
+        </div>
+        <div class = "description">
+          <h1>João Bernardo</h1>
+          <h2>Freelance Developer</h2>
+          <p>After realising the true power of creativity throught coding I change the course of my life by becoming a Web Dev freelancer</p>
+          <p>My mission is <strong><i>to have the ability to be creative in this formated world!</i></strong></p>
+          <a href="https://www.google.com">See for yourself</a>
+        </div>
       </div>
-      <div class = "description">
-        <h1>João Bernardo</h1>
-        <h2>Freelance Developer</h2>
-        <p>After realising the true power of creativity throught coding I change the course of my life by becoming a Web Dev freelancer</p>
-        <p>My mission is <strong><i>to have the ability to be creative in this formated world!</i></strong></p>
-        <a href="https://www.google.com">See for yourself</a>
+
+      <div class="card" id="middle">
+        <h2>Social</h2>
+        <ol class = "social">
+          <li><a href="https://github.com/jbernardoviana" target="_blank"><img src="images/github_circle_color.png"></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/jo%C3%A3o-bernardo-402a7151" target="_blank"><img src="images/linkedin_circle_color.png"></a></li>
+          <li>
+            <a href="htttp://www.facebook.com/j.bernardoviana" target="_blank"><img src="images/facebook_circle_color.png"></a>
+          </li>
+          <li><a href="https://twitter.com/jbee_viana" target="_blank"><img src="images/twitter_circle_color.png"></a></li>
+
+          <!--  sprite test -->
+
+          <li id="sprite"><a href="htttp://www.facebook.com/j.bernardoviana" target="_blank"></a></li>
+        </ol>
       </div>
-    </div>
 
-    <div class="card">
-      <h2>Social</h2>
-      <ol class = "social">
-        <li><a href="https://github.com/jbernardoviana" target="_blank"><img src="images/github_circle_color.png"></a>
-        </li>
-        <li><a href="https://www.linkedin.com/in/jo%C3%A3o-bernardo-402a7151" target="_blank"><img src="images/linkedin_circle_color.png"></a></li>
-        <li>
-          <a href="htttp://www.facebook.com/j.bernardoviana" target="_blank"><img src="images/facebook_circle_color.png"></a>
-        </li>
-        <li><a href="https://twitter.com/jbee_viana" target="_blank"><img src="images/twitter_circle_color.png"></a></li>
+      <div class="card" id="location">
+        <h2>Current location</h2>
+        <table class = "info">
+          <tbody>
+            <tr>
+              <td>
+                <img src="images/lisbon_city.jpeg" alt="Lisbon city image">
+              </td>
+              <td>
+                <h3>Lisboa</h3>
+                <p>Humanity finds a mysterious, obviously artificial, object buried beneath the Lunar surface and, with the intelligent computer H.A.L. 9000, sets off on a quest.</p>
+                <hr>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-        <!--  sprite test -->
-
-        <li id="sprite"><a href="htttp://www.facebook.com/j.bernardoviana" target="_blank"></a></li>
-      </ol>
-    </div>
-
-    <div class="card">
-      <h2>My Projects</h2>
-      <table class = "info">
-        <thead>
-          <th>Projects</th>
-          <th>Programming Languages</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img src="http://placehold.it/200x200"></td>
-            <td>2nd col.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores iste, corrupti error.</td>
-          </tr>
-          <tr>
-            <td><img src="http://placehold.it/200x200"></td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi temporibus neque, rem quia id, voluptatibus sint ut error expedita.</td>
-          </tr>
-          <tr>
-            <td><img src="http://placehold.it/200x200"></td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam incidunt quo pariatur eos fuga nesciunt ratione voluptas rem veritatis hic? Tempore enim.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="card">
-      <!-- ABOUT!!!!! -->
-
+      <div class="card text-center" id="footer">
+        <!-- ABOUT!!!!! -->
+        <h2>About</h2>
+        <h3>This page is hosted in git hub pages and was built by myself</h3>
+        <p>© <a href="https://github.com/jbernardoviana">jbernardoviana</a></p>
+        <p>Made with <i class="fa fa-heart" aria-hidden="true"></i></p>
+      </div>
     </div>
   </div>
+
 </body>
 </html>
